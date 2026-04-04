@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --background-color: #818f98;
+  --text-color: #48555b --primary-color: #bf1f1f;
+  --secondary-color: #f24c27;
+  --tertiary-color: #731212;
+  --accent: #8c7568;
+
+  font-family: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+}
