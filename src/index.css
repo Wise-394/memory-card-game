@@ -22,3 +22,8 @@ a {
 body {
   background-color: var(--background-color);
 }
+
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

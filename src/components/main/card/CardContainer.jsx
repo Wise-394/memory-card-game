@@ -1,11 +1,12 @@
 import styles from "@/card/CardContainer.module.css";
 import Card from "./Card";
 import { useState, useEffect } from "react";
-
+import DotaIcon from "../../DotaIcon";
 function CardContainer({ setScore, handleLose }) {
   const cardLength = 16;
   const [availableHeroes, setAvailableHeroes] = useState([]);
   const [clickedHeroes, setClickedHeroes] = useState([]);
+  const [status, setStatus] = useState("fetching");
 
   const link =
     "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/";
@@ -40,6 +41,7 @@ function CardContainer({ setScore, handleLose }) {
       const random = selectRandomHeroes(heroes);
       const withImg = getHeroesImg(random);
       setAvailableHeroes(withImg);
+      setStatus("loaded");
     };
 
     init();
@@ -61,6 +63,12 @@ function CardContainer({ setScore, handleLose }) {
           handleLose={handleLose}
         />
       ))}
+      {status === "fetching" ? (
+        <p>
+          <DotaIcon />
+          Loading...
+        </p>
+      ) : null}
     </div>
   );
 }
