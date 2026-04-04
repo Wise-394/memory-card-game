@@ -1,6 +1,6 @@
 .header {
-  color: #d2d3d4;
-  height: 7vh;
+  color: var(--text-color);
+  height: 6vh;
   display: flex;
   align-items: center;
   font-size: 1.5rem;

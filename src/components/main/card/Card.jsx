@@ -2,10 +2,10 @@ import styles from "@/card/Card.module.css";
 
 function Card() {
   return (
-    <img
-      src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lion.png"
-      className={styles.card}
-    />
+    <div className={styles.card}>
+      <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lion.png" />
+      <p className={styles.heroName}>LION</p>
+    </div>
   );
 }
 

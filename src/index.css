@@ -6,7 +6,8 @@
 }
 :root {
   --background-color: #818f98;
-  --text-color: #48555b --primary-color: #bf1f1f;
+  --text-color: white;
+  --primary-color: #bf1f1f;
   --secondary-color: #f24c27;
   --tertiary-color: #731212;
   --accent: #8c7568;
