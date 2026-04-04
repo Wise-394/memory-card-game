@@ -3,7 +3,8 @@ import DotaIcon from "./DotaIcon";
 function Header() {
   return (
     <header className={styles.header}>
-      <DotaIcon /> MEMORY CARD GAME
+      <DotaIcon />
+      <p>MEMORY CARD GAME </p>
     </header>
   );
 }

@@ -1,4 +1,6 @@
 .dotaIcon {
   height: auto;
-  width: 24px;
+  width: 28px;
+  filter: invert(1) invert(18%) sepia(91%) saturate(2635%) hue-rotate(351deg)
+    brightness(95%) contrast(89%);
 }
