@@ -1,9 +1,9 @@
 import ScoreContainer from "./ScoreContainer";
-function Title() {
+function Title({ score, bestScore }) {
   return (
     <div>
       <h1>DO NOT CLICK THE SAME HERO TWICE</h1>
-      <ScoreContainer />
+      <ScoreContainer score={score} bestScore={bestScore} />
     </div>
   );
 }

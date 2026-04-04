@@ -1,9 +1,9 @@
 import styles from "@/main/ScoreContainer.module.css";
-function ScoreContainer() {
+function ScoreContainer({ score, bestScore }) {
   return (
     <div className={styles.scoreContainer}>
-      <p>Current Score: 0</p>
-      <p>Best Score: 0</p>
+      <p>Current Score: {score}</p>
+      <p>Best Score: {bestScore || 0}</p>
     </div>
   );
 }

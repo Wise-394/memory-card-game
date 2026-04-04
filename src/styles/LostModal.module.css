@@ -1,0 +1,23 @@
+.lostModal {
+  margin: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  height: 25vh;
+  width: 20vw;
+  background-color: var(--background-color);
+  color: white;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.lostModal[open] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lostModal button {
+  border-radius: 10px;
+  padding: 1rem 2rem;
+}

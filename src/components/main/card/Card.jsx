@@ -1,9 +1,23 @@
 import styles from "@/card/Card.module.css";
 
-function Card({ hero, setClickedHeroes }) {
+function Card({
+  hero,
+  clickedHeroes,
+  setClickedHeroes,
+  setScore,
+  shuffle,
+  handleLose,
+}) {
   const handleClick = (id, name) => {
-    setClickedHeroes((heroes) => [...heroes, { id: id, name: name }]);
+    if (!clickedHeroes.some((hero) => hero.id === id)) {
+      setClickedHeroes((prev) => [...prev, { id: id, name: name }]);
+      setScore((prev) => prev + 1);
+      shuffle();
+    } else {
+      handleLose();
+    }
   };
+
   return (
     <div
       className={styles.card}
