@@ -9,6 +9,7 @@ function Main() {
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
   const dialogRef = useRef(null);
+  const [gameKey, setGameKey] = useState(0);
   const handleLose = () => {
     if (score > bestScore) {
       setBestScore(score);
@@ -19,8 +20,17 @@ function Main() {
   return (
     <main className={styles.main}>
       <Title score={score} bestScore={bestScore} />
-      <CardContainer setScore={setScore} handleLose={handleLose} />
-      <LostModal dialogRef={dialogRef} score={score} setScore={setScore} />
+      <CardContainer
+        setScore={setScore}
+        handleLose={handleLose}
+        key={gameKey}
+      />
+      <LostModal
+        dialogRef={dialogRef}
+        score={score}
+        setScore={setScore}
+        setGameKey={setGameKey}
+      />
     </main>
   );
 }

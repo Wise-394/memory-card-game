@@ -1,8 +1,9 @@
 import styles from "@/LostModal.module.css";
 
-function LostModal({ dialogRef, score, setScore }) {
+function LostModal({ dialogRef, score, setScore, setGameKey }) {
   const handleClose = () => {
     dialogRef.current.close();
+    setGameKey((prev) => prev + 1);
     setScore(0);
   };
   return (
