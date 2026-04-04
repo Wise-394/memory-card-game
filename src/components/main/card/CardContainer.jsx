@@ -1,33 +1,11 @@
 import styles from "@/card/CardContainer.module.css";
 import Card from "./Card";
-function CardContainer() {
+function CardContainer({ availableHeroes }) {
   return (
     <div className={styles.cardContainer}>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {availableHeroes.map((hero) => (
+        <Card hero={hero} key={hero.id} />
+      ))}
     </div>
   );
 }

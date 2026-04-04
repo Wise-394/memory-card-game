@@ -3,6 +3,7 @@
   border: 0;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 :root {
   --background-color: #818f98;
@@ -13,6 +14,9 @@
   --accent: #8c7568;
 
   font-family: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
+}
+a {
+  color: var(--text-color);
 }
 
 body {
