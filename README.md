@@ -6,7 +6,7 @@
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 
-[Live Demo](https://github.com/wise-394)
+[Live Demo](https://dota-memory-card-game.vercel.app)
 
 </div>
 
