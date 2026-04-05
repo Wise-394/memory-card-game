@@ -36,3 +36,19 @@
   opacity: 1;
   bottom: 10px;
 }
+
+@media (hover: none) {
+  .card:hover {
+    transform: none;
+    box-shadow: 4px 16px 24px rgba(0, 0, 0, 0.5);
+  }
+
+  .card:hover .heroName {
+    opacity: 0;
+  }
+
+  .card:active .heroName {
+    opacity: 0;
+    bottom: 10px;
+  }
+}
