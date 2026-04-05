@@ -37,11 +37,15 @@ function CardContainer({ setScore, handleLose }) {
     };
 
     const init = async () => {
-      const heroes = await getAllHeroes();
-      const random = selectRandomHeroes(heroes);
-      const withImg = getHeroesImg(random);
-      setAvailableHeroes(withImg);
-      setStatus("loaded");
+      try {
+        const heroes = await getAllHeroes();
+        const random = selectRandomHeroes(heroes);
+        const withImg = getHeroesImg(random);
+        setAvailableHeroes(withImg);
+        setStatus("loaded");
+      } catch {
+        setStatus("error");
+      }
     };
 
     init();
@@ -69,6 +73,9 @@ function CardContainer({ setScore, handleLose }) {
           Loading...
         </p>
       ) : null}
+      {status === "error" && (
+        <p>Failed to load heroes. Please try again later.</p>
+      )}
     </div>
   );
 }

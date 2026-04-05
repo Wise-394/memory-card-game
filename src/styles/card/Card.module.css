@@ -24,7 +24,7 @@
   position: absolute;
   bottom: 0px;
   left: 10px;
-  font-size: min(1.5rem, 3vw);
+  font-size: min(1.5rem, 2vw);
   font-weight: 800;
   opacity: 0;
   transition:
