@@ -14,9 +14,13 @@
   --accent: #8c7568;
 
   font-family: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
+  font-size: clamp(12px, 1.5vw, 16px);
 }
 a {
   color: var(--text-color);
+}
+h1 {
+  font-size: min(2rem, 5vw);
 }
 
 body {

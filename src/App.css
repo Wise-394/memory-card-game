@@ -4,6 +4,12 @@
   gap: 0.5rem;
 }
 
+@media (max-width: 1024px) {
+  #root {
+    min-height: 100vh;
+  }
+}
+
 /* * {
   outline: 1px solid white;
 } */

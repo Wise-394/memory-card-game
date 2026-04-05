@@ -3,8 +3,14 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: min(1.5rem, 3vw);
   font-weight: 800;
+  text-align: center;
+}
+
+.scoreContainer h1 {
+  font-size: min(2rem, 2vw);
+  color: red;
 }
 
 .scoreContainer > p:first-child {

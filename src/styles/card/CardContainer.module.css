@@ -1,9 +1,20 @@
 .cardContainer {
   gap: 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
   padding-bottom: 5rem;
   min-height: 80vh;
+}
+
+@media (max-width: 1024px) {
+  .cardContainer {
+    padding: 1.5rem;
+    min-height: 0;
+    gap: 1rem;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    min-height: 55vh;
+  }
 }
